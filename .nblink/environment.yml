@@ -1,0 +1,9 @@
+name: default-environment
+channels:
+  - emscripten-forge
+  - conda-forge
+dependencies:
+  # A Jupyter kernel for Python
+  - xeus-python
+  - ipecharts
+  - specta >= 0.2.0

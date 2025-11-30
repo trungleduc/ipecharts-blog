@@ -1,11 +1,12 @@
 {
-  "id": "70038047064671",
+  "id": "7235162740186508",
   "lockVersion": "1.0.2",
   "platform": "emscripten-wasm32",
   "specs": [
     "xeus-python",
     "ipecharts",
-    "specta >= 0.2.0"
+    "numpy",
+    "specta >= 0.3.0"
   ],
   "channels": [
     "emscripten-forge",
@@ -57,17 +58,40 @@
       },
       "size": 2282231
     },
-    "specta-0.2.2-pyh80e38bb_0.conda": {
+    "numpy-2.3.3-py313h6394566_0.tar.bz2": {
+      "name": "numpy",
+      "build": "py313h6394566_0",
+      "version": "2.3.3",
+      "subdir": "emscripten-wasm32",
+      "channel": "emscripten-forge",
+      "hash": {
+        "sha256": "9529984a036dbf651fda0ea3f67aba2d7c3a88c8ac5798e736b7e478be70ff9b"
+      },
+      "size": 6795769
+    },
+    "specta-0.3.0-pyhbbac1ac_0.conda": {
       "name": "specta",
-      "build": "pyh80e38bb_0",
-      "version": "0.2.2",
+      "build": "pyhbbac1ac_0",
+      "version": "0.3.0",
       "subdir": "noarch",
       "channel": "conda-forge",
       "hash": {
-        "md5": "7edf11c0089a7591db232e95bc8c824a",
-        "sha256": "5cf19a3c1de9aee8281f1d127f9e3e5866290f09433b97ed571993bafacfd819"
+        "md5": "41476273787799d21f0b9fe99aa0d89b",
+        "sha256": "3bb17ae885293e2131e4bef78896f8b1a4ed94c287d70398f11b5d4655d1cd48"
       },
-      "size": 5659824
+      "size": 5460844
+    },
+    "jupyterlite-core-0.7.0-pyhcf101f3_0.conda": {
+      "name": "jupyterlite-core",
+      "build": "pyhcf101f3_0",
+      "version": "0.7.0",
+      "subdir": "noarch",
+      "channel": "conda-forge",
+      "hash": {
+        "md5": "4797b73e8813dce0afe8c96839118294",
+        "sha256": "311365f733dceb4f47058dbc374c2420c41537b1c23db61f5c0ce558e2afc008"
+      },
+      "size": 16224226
     },
     "python-3.13.1-h_c8de616_5_cp313.tar.bz2": {
       "name": "python",
@@ -182,18 +206,6 @@
         "sha256": "6bb58afb7eabc8b4ac0c7e92707fb498313cc0164cf04e7ba1090dbf49af514b"
       },
       "size": 114376
-    },
-    "jupyterlite-core-0.6.4-pyhe01879c_0.conda": {
-      "name": "jupyterlite-core",
-      "build": "pyhe01879c_0",
-      "version": "0.6.4",
-      "subdir": "noarch",
-      "channel": "conda-forge",
-      "hash": {
-        "md5": "b1f5663c5ccf466416fb822d11e1aff3",
-        "sha256": "9e42ec9f74851c04db16c47a52cf8d45b37b06c7154bf432f1928f7582f5ac65"
-      },
-      "size": 16033775
     },
     "backcall-0.2.0-pyh9f0ad1d_0.tar.bz2": {
       "name": "backcall",
@@ -363,18 +375,6 @@
       },
       "size": 73790
     },
-    "importlib-metadata-8.7.0-pyhe01879c_1.conda": {
-      "name": "importlib-metadata",
-      "build": "pyhe01879c_1",
-      "version": "8.7.0",
-      "subdir": "noarch",
-      "channel": "conda-forge",
-      "hash": {
-        "md5": "63ccfdc3a3ce25b027b8767eb722fca8",
-        "sha256": "c18ab120a0613ada4391b15981d86ff777b5690ca461ea7e9e49531e8f374745"
-      },
-      "size": 34641
-    },
     "jupyter_core-5.9.1-py313h1804a44_0.tar.bz2": {
       "name": "jupyter_core",
       "build": "py313h1804a44_0",
@@ -458,17 +458,17 @@
       },
       "size": 26621
     },
-    "zipp-3.23.0-pyhcf101f3_1.conda": {
-      "name": "zipp",
-      "build": "pyhcf101f3_1",
-      "version": "3.23.0",
+    "importlib-metadata-8.7.0-pyhe01879c_1.conda": {
+      "name": "importlib-metadata",
+      "build": "pyhe01879c_1",
+      "version": "8.7.0",
       "subdir": "noarch",
       "channel": "conda-forge",
       "hash": {
-        "md5": "30cd29cb87d819caead4d55184c1d115",
-        "sha256": "b4533f7d9efc976511a73ef7d4a2473406d7f4c750884be8e8620b0ce70f4dae"
+        "md5": "63ccfdc3a3ce25b027b8767eb722fca8",
+        "sha256": "c18ab120a0613ada4391b15981d86ff777b5690ca461ea7e9e49531e8f374745"
       },
-      "size": 24194
+      "size": 34641
     },
     "platformdirs-4.5.0-pyhcf101f3_0.conda": {
       "name": "platformdirs",
@@ -481,6 +481,18 @@
         "sha256": "7efd51b48d908de2d75cbb3c4a2e80dd9454e1c5bb8191b261af3136f7fa5888"
       },
       "size": 23625
+    },
+    "zipp-3.23.0-pyhcf101f3_1.conda": {
+      "name": "zipp",
+      "build": "pyhcf101f3_1",
+      "version": "3.23.0",
+      "subdir": "noarch",
+      "channel": "conda-forge",
+      "hash": {
+        "md5": "30cd29cb87d819caead4d55184c1d115",
+        "sha256": "b4533f7d9efc976511a73ef7d4a2473406d7f4c750884be8e8620b0ce70f4dae"
+      },
+      "size": 24194
     }
   },
   "pipPackages": {}

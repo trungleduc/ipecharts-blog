@@ -6,4 +6,5 @@ dependencies:
   # A Jupyter kernel for Python
   - xeus-python
   - ipecharts
-  - specta >= 0.2.0
+  - numpy
+  - specta >= 0.3.0

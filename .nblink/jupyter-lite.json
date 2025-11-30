@@ -1,17 +1,15 @@
 {
-  "jupyter-config-data": {
-    "spectaConfig": {
-      "defaultLayout": "article",
-      "perFileConfig": {
-        "blog.ipynb": {
-          "hideTopbar": true,
-          "defaultLayout": "article"
-        }
+  "spectaConfig": {
+    "defaultLayout": "article",
+    "perFileConfig": {
+      "blog.ipynb": {
+        "hideTopbar": true,
+        "defaultLayout": "article"
       }
-    },
-    "disabledExtensions": [
-      "@jupyterlab/notebook-extension:open-with-no-kernel",
-      "@jupyterlite/application-extension:opener"
-    ]
-  }
+    }
+  },
+  "disabledExtensions": [
+    "@jupyterlab/notebook-extension:open-with-no-kernel",
+    "@jupyterlite/application-extension:opener"
+  ]
 }

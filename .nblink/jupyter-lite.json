@@ -6,6 +6,13 @@
         "hideTopbar": true,
         "defaultLayout": "article"
       }
+    },   
+    "labConfig": {
+      "setSingleMode": true,
+      "hideLeftPanel": true,
+      "hideRightPanel": true,
+      "hideStatusbar": true,
+      "hideHeader": false
     }
   },
   "disabledExtensions": [

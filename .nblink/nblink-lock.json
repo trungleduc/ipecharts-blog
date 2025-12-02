@@ -1,12 +1,12 @@
 {
-  "id": "7235162740186508",
+  "id": "6974201727455292",
   "lockVersion": "1.0.2",
   "platform": "emscripten-wasm32",
   "specs": [
     "xeus-python",
     "ipecharts",
     "numpy",
-    "specta >= 0.3.0"
+    "specta >= 0.3.1"
   ],
   "channels": [
     "emscripten-forge",
@@ -35,16 +35,38 @@
     ]
   },
   "packages": {
-    "xeus-python-0.17.6-py313h027658c_0.tar.bz2": {
+    "xeus-python-0.17.6-py313h027658c_1.tar.bz2": {
       "name": "xeus-python",
-      "build": "py313h027658c_0",
+      "build": "py313h027658c_1",
       "version": "0.17.6",
       "subdir": "emscripten-wasm32",
       "channel": "emscripten-forge",
       "hash": {
-        "sha256": "069d25be570a4c26ad85eca10d5738edd94337b9e35f5b15b3df45dafdcd0273"
+        "sha256": "f274fb08d1d1b8f9e1d41638e53a610554fa08ad1bc8b606a6b45e4c017f7f90"
       },
-      "size": 5050835
+      "size": 5082351
+    },
+    "xeus-5.2.6-h2072262_0.tar.bz2": {
+      "name": "xeus",
+      "build": "h2072262_0",
+      "version": "5.2.6",
+      "subdir": "emscripten-wasm32",
+      "channel": "emscripten-forge",
+      "hash": {
+        "sha256": "92b87c1993283014d660b67020e70b1d8fcaa5e80aa079df1e9999633eca6cf9"
+      },
+      "size": 379059
+    },
+    "pyjs-rt-3.1.0-py313h7595f35_3.tar.bz2": {
+      "name": "pyjs-rt",
+      "build": "py313h7595f35_3",
+      "version": "3.1.0",
+      "subdir": "emscripten-wasm32",
+      "channel": "emscripten-forge",
+      "hash": {
+        "sha256": "0ba36d631d651ece421984e57b816c3985a39102392794ca4d22ea91949ca98b"
+      },
+      "size": 46058
     },
     "ipecharts-1.4.0-pyh80e38bb_0.conda": {
       "name": "ipecharts",
@@ -69,17 +91,17 @@
       },
       "size": 6795769
     },
-    "specta-0.3.0-pyhbbac1ac_0.conda": {
+    "specta-0.3.1-pyh80e38bb_0.conda": {
       "name": "specta",
-      "build": "pyhbbac1ac_0",
-      "version": "0.3.0",
+      "build": "pyh80e38bb_0",
+      "version": "0.3.1",
       "subdir": "noarch",
       "channel": "conda-forge",
       "hash": {
-        "md5": "41476273787799d21f0b9fe99aa0d89b",
-        "sha256": "3bb17ae885293e2131e4bef78896f8b1a4ed94c287d70398f11b5d4655d1cd48"
+        "md5": "b8895b3e1b1d293bf255bac017114305",
+        "sha256": "297e389d20540a07c03bb8f23d4032e26c2c3377f6e3fe861d72891d5073cc4c"
       },
-      "size": 5460844
+      "size": 5694140
     },
     "jupyterlite-core-0.7.0-pyhcf101f3_0.conda": {
       "name": "jupyterlite-core",
@@ -138,28 +160,6 @@
         "sha256": "729a97a0115f84a8e3d19d2e7770597e57ff24b3406c2a90e1f6858d0c1c5e4b"
       },
       "size": 12228
-    },
-    "pyjs-2.8.0-py313h7595f35_0.tar.bz2": {
-      "name": "pyjs",
-      "build": "py313h7595f35_0",
-      "version": "2.8.0",
-      "subdir": "emscripten-wasm32",
-      "channel": "emscripten-forge",
-      "hash": {
-        "sha256": "37ff69d58e0fa3d438155b203c9d2118fa3c2e5d4b3bfbc06a03fcd3d1ba1ef0"
-      },
-      "size": 5314448
-    },
-    "xeus-5.2.6-h2072262_0.tar.bz2": {
-      "name": "xeus",
-      "build": "h2072262_0",
-      "version": "5.2.6",
-      "subdir": "emscripten-wasm32",
-      "channel": "emscripten-forge",
-      "hash": {
-        "sha256": "92b87c1993283014d660b67020e70b1d8fcaa5e80aa079df1e9999633eca6cf9"
-      },
-      "size": 379059
     },
     "emscripten-abi-3.1.73-h267e887_12.tar.bz2": {
       "name": "emscripten-abi",

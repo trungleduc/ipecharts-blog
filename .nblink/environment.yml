@@ -7,4 +7,4 @@ dependencies:
   - xeus-python
   - ipecharts
   - numpy
-  - specta >= 0.3.0
+  - specta >= 0.3.1
